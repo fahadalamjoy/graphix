@@ -10,7 +10,7 @@
 .body {
   width: 90%;
   display: flex;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   flex-wrap: wrap;
 }
 
