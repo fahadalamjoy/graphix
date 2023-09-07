@@ -16,8 +16,7 @@ export default function FooterPage() {
           </h1>
           <div className="text-white text-2xl">
             <span className="inline">
-              <MdLocationPin className="inline translate-y-[-10]" /> Birmingham,
-              United Kingdom
+              <MdLocationPin className="inline translate-y-[-10]" /> Birmingham,United Kingdom
             </span>
           </div>
           <div className="text-white text-2xl">

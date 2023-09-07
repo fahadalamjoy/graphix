@@ -43,7 +43,7 @@ const Pricing = () => {
           }}
           whileInView="animate"
         >
-          <h1 className="font-extrabold text-4xl mt-2 md:text-5xl text-center">
+          <h1 className="font-extrabold font-custom text-4xl mt-2 md:text-5xl text-center">
             Find the perfect plan that's right for you!
           </h1>
           {/* Pricing section */}
@@ -81,7 +81,7 @@ const Pricing = () => {
                 <div className="relative top-0 left-0 scale-125 sec:scale-100 pt-5 sec:pt-0">
                   <Image alt="" src={pol} />
                 </div>
-                <div className="absolute top-[20%] sc:top-[26%] left-[50%] ml-[-23%] sm:ml-[-12%] sc:ml-[-15%] sec:ml-[-17%] scale-75">
+                <div className="absolute top-[20%] sc:top-[26%] lg:left-[50%] left-[44%] ml-[-23%] sm:ml-[-12%] sc:ml-[-15%] sec:ml-[-17%] scale-75">
                   <div className="flex flex-col justify-center items-center">
                     <Image
                       alt=""

@@ -21,7 +21,7 @@ const WorkPage = () => {
   return (
     <div className="overflow-hidden bg-white z-10">
       <div className="m-10">
-        <h1 className="text-center  text-5xl mt-2">
+        <h1 className="text-center font-custom text-5xl mt-2">
           Have a look at some of our work!
         </h1>
         <ul className="flex flex-col md:grid lg:grid md:grid-cols-2 lg:grid-cols-3 mt-[50px] ">

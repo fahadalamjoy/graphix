@@ -29,7 +29,7 @@ export default function Hero() {
     <div>
       <section
         id="hero"
-        className="pointer-events-none p-5 bg-white h-[1350vh] z-[-10px]"
+        className="pointer-events-none p-5 bg-white  z-[-10px]"
       >
         {/* {matches ? <HeroDesktop /> : <HeroMobile />} */}
         {width > 600 ? <HeroDesktop /> : <HeroMobile />}
@@ -41,7 +41,7 @@ export default function Hero() {
 
 export function HeroDesktop() {
   return (
-    <section id="hero" className="p-5 bg-white h-[1350vh]">
+    <section id="hero" className="p-5 bg-white h-[1450vh]">
       <LottieControl />
     </section>
   );
@@ -49,7 +49,7 @@ export function HeroDesktop() {
 export function HeroMobile() {
   return (
     <>
-      <section id="hero" className="p-5 bg-white h-[1300vh]">
+      <section id="hero" className="p-5 bg-white h-[1000vh]">
         <LottieControlMobile />
       </section>
     </>
