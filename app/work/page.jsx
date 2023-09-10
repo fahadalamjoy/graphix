@@ -19,7 +19,7 @@ const fadedinvar = {
 
 const WorkPage = () => {
   return (
-    <div className="overflow-hidden bg-white z-10">
+    <div className="overflow-hidden bg-white z-10 relative">
       <div className="m-10">
         <h1 className="text-center font-custom text-5xl mt-2">
           Have a look at some of our work!
