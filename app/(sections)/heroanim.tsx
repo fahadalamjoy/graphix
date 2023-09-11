@@ -20,6 +20,7 @@ const LottieControl = () => {
       renderer: "svg",
       loop: false,
       autoplay: false,
+      initialSegment: [2, 125],
 
       animationData, // lottie file
     });
