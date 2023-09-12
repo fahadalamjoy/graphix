@@ -24,6 +24,7 @@ import animationData from "@/public/skills_graphics.json";
 import imgsamp from "@/public/one.webp";
 import Lottie from "lottie-react";
 import SkillHome from "./skill/page";
+import ShowSkill from "./showskill/page";
 
 export default function Home() {
   return (
@@ -32,7 +33,8 @@ export default function Home() {
       <main className="scroll-smooth">
         <Hero />
         <Intro />
-        <SkillHome />
+        <ShowSkill />
+        {/* <SkillHome /> */}
         <WorkPage />
         <Pricing />
         <FullTime />
