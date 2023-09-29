@@ -24,7 +24,7 @@ export default function ExtraContact() {
                 <div>
                   <label className=" text-gray-700 text-sm">Name:</label>
                   <input
-                    className="text-black text-lg  w-full border-b-2 border-black"
+                    className="outline-none text-black text-lg  w-full border-b-2 border-black"
                     type="text"
                     aria-label="Full name"
                   />
@@ -32,21 +32,27 @@ export default function ExtraContact() {
                 <div>
                   <label className=" text-gray-700 text-sm">Email:</label>
                   <input
-                    className="text-black text-lg  w-full border-b-2 border-black"
+                    className="outline-none text-black text-lg  w-full border-b-2 border-black"
                     type="text"
                     aria-label="Full name"
                   />
                 </div>
               </div>
-              <div>
-                <label className=" text-gray-700 text-sm">Project Description</label>
+              <div className="mb-10">
+                <label className=" text-gray-700 text-sm">
+                  Project Description
+                </label>
                 <input
-                  className="text-black text-lg  w-full border-b-2 border-black"
+                  className="outline-none text-black text-lg  w-full border-b-2 border-black"
                   type="text"
                   aria-label="Full name"
                 />
               </div>
             </div>
+
+            <button className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-xl hover:bg-gray-800 focus:shadow-outline focus:outline-none hover:scale-95 active:scale-95 ">
+              <span className="px-4">Submit</span>
+            </button>
           </div>
         </div>
       </div>

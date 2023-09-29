@@ -1,20 +1,14 @@
-/* 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 */
-
 "use client";
-
 import * as React from "react";
 import "./styles.css";
 import lottie from "lottie-web";
-
-// import animationData from "@/public/animation_llz20fgy.json";
-// import animationData from "@/public/lott.json";
-import animationData from "@/public/expToKey_hero_comp.json";
+import animationData from "@/public/desktop_hero_new_keyExp.json";
 
 const LottieControl = () => {
   const lottieRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    var animDuration = 100; // speed sarthak
+    var animDuration = 100;
     const anim = lottie.loadAnimation({
       container: lottieRef.current!,
       renderer: "svg",
@@ -22,7 +16,7 @@ const LottieControl = () => {
       autoplay: false,
       initialSegment: [2, 125],
 
-      animationData, // lottie file
+      animationData,
     });
 
     function animatebodymovin(duration: number) {
