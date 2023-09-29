@@ -43,14 +43,14 @@ const Pricing = () => {
           }}
           whileInView="animate"
         >
-          <h1 className="font-extrabold font-custom text-4xl mt-2 md:text-5xl text-center">
+          <h1 className="font-extrabold font-custom text-4xl mt-10 md:text-5xl text-center">
             Find the perfect plan that's right for you!
           </h1>
           {/* Pricing section */}
           <div className="flex w-full flex-col sc:flex-row justify-around items-center gap-10 sc:gap-0 text-white my-16">
             {/*  */}
             {/* rounded pricing */}
-            <div className="scale-110 my-10 sc:mb-0 sc:scale-100 relative w-[20rem] h-[20rem] bg-black rounded-full flex justify-center items-center text-center p-5 shadow-xl">
+            <div className="scale-105 nw:scale-125 md:scale-100  my-10 sc:mb-0 relative w-[20rem] h-[20rem] bg-black rounded-full flex justify-center items-center text-center p-5 shadow-xl">
               <div className="flex flex-col justify-center items-center">
                 <span className="text-3xl m-2">
                   <Image alt="" src={one} className="scale-75" />
@@ -76,29 +76,68 @@ const Pricing = () => {
               </div>
             </div>
             {/* tri */}
-            <div className="scale-125 sc:scale-100 ">
-              <div className="relative top-0 left-0 p-10">
-                <div className="relative top-0 left-0 scale-125 sec:scale-100 pt-5 sec:pt-0">
+
+            <div className="">
+              <div className=" boxxing relative w-[25rem] h-[25rem]  scale-95 nw:scale-125 md:scale-100">
+                <div className="absolute top-0 left-0 mt-8">
                   <Image alt="" src={pol} />
                 </div>
+                <div className="relative">
+                  {/* h-full here ☝️*/}
+                  <div className="flex flex-col justify-center items-center p-28">
+                    <span className="scale-75 pl-5">
+                      <Image alt="" src={two} className="" />
+                    </span>
+                    <span className="font-bold text-[20px] text-5xl">Pro</span>
+                    <span className="font-extrabold text-2xl mt-2">
+                      £169.99
+                      <span className="font-extralight text-sm">/mo</span>
+                    </span>
+                    <span className="font-bold">
+                      <span className="font-bold text-xl">20 Contents </span>
+                      <span className="font-extralight text-sm">/mo</span>
+                    </span>
+                    <span className="font-medium">£20 for SEO service</span>
+                    <span className="font-medium">
+                      £ 10 for social media posting
+                    </span>
+
+                    <a href="#">
+                      <button className=" bg-white border rounded-[0.7rem] w-[10rem] h-10  mt-4  text-center text-black text-sm font-bold hover:bg-slate-100 duration-200">
+                        BUY NOW
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="scale-125 sc:scale-100 ">
+              <div className="relative top-0 left-0 p-10">
+                <div className="flex">
+                  <div className="relative top-0 left-0 scale-125 sec:scale-100 pt-5 sec:pt-0 bk360:scale-125">
+                    <Image alt="" src={pol} />
+                  </div>
+                </div>
                 <div className="absolute top-[20%] sc:top-[26%] lg:left-[50%] left-[44%] ml-[-23%] sm:ml-[-12%] sc:ml-[-15%] sec:ml-[-17%] scale-75">
-                  <div className="flex flex-col justify-center items-center">
-                    <Image
-                      alt=""
-                      src={two}
-                      className="scale-90 sec:scale-100"
-                    />
+                  <div className="flex flex-col justify-center items-center surfaceduo:pl-4 bk360:scale-90 ">
+                    <span className="iph:pl-8">
+                      <Image
+                        alt=""
+                        src={two}
+                        className="scale-90 sec:scale-100"
+                      />
+                    </span>
                     <span className="mt-2 sec:mt-8 sc:mt-5 font-semibold text-2xl sc:text-4xl">
                       Standard
                     </span>
                     <span className="font-extrabold inline-block  mt-4">
                       <h1 className="text-xl">
-                      £139.99{" "}<span className="font-extralight text-sm sec:text-xl">
-                        /mo
-                      </span>
-
+                        £139.99{" "}
+                        <span className="font-extralight text-sm sec:text-xl">
+                          /mo
+                        </span>
                       </h1>
-                      
                     </span>
                     <span className="font-bold">
                       <span className="font-bold text-2xl">15 Contents </span>
@@ -117,9 +156,9 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* square */}
-            <div className="scale-110 my-10 sc:mb-0 sc:scale-100 relative w-[20rem] h-[20rem] bg-black flex justify-center items-center text-center p-5 shadow-xl">
+            <div className="scale-105 nw:scale-125 md:scale-100  my-10 sc:mb-0 relative w-[20rem] h-[20rem] bg-black flex justify-center items-center text-center p-5 shadow-xl">
               <div className="flex flex-col justify-center items-center">
                 <span className="text-3xl m-2">
                   <Image alt="" src={three} className="scale-75" />

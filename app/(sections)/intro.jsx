@@ -105,7 +105,8 @@ export function SkillsSec() {
 
 export default function Intro() {
   return (
-    <section id="intro" className="bg-black h-[900px]">
+    <section id="intro" className="bg-black ">
+      {/* h-[900px] removed */}
       <Home />
       <SkillsSec />
     </section>

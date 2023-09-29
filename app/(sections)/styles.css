@@ -2,14 +2,14 @@
   font-family: sans-serif;
   text-align: center;
 }
-/*
+
 body,
 html {
   margin: 0;
   width: 100%;
   height: 1400vh;
   background-color: hsl(60, 36%, 100%);
-} */
+}
 
 #container {
   width: 400px;

@@ -1,20 +1,14 @@
-/* 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 */
-
 "use client";
-
 import * as React from "react";
 import "./styles.css";
 import lottie from "lottie-web";
-
-// import animationData from "@/public/animation_llz20fgy.json";
-// import animationData from "@/public/lott.json";
-import animationData from "@/public/expToKey_hero_anim_mobile.json";
+import animationData from "@/public/hero_mobile_new_keyExp.json";
 
 const LottieControlMobile = () => {
   const lottieRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    var animDuration = 100; // speed sarthak
+    var animDuration = 100;
     const anim = lottie.loadAnimation({
       container: lottieRef.current!,
       renderer: "svg",
@@ -22,23 +16,20 @@ const LottieControlMobile = () => {
       autoplay: false,
       initialSegment: [2, 150],
 
-      animationData, // lottie file
+      animationData,
     });
 
     function animatebodymovin(duration: number) {
       const scrollPosition = window.scrollY;
       const maxFrames = anim.totalFrames;
-      // console.log("ooof", anim.totalFrames);
-      const frame = (maxFrames / 1000) * (scrollPosition / (duration / 10)); //change this sarthak
-      // const frame = (maxFrames / 100) * (scrollPosition / (duration / 100)); //DEFAULT this sarthak
+      const frame = (maxFrames / 1000) * (scrollPosition / (duration / 10));
+      // const frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
 
       anim.goToAndStop(frame - 1, true);
     }
     const onScroll = () => {
-      // console.log("Scrolling");
       animatebodymovin(animDuration);
     };
-
     document.addEventListener("scroll", onScroll);
 
     return () => {
